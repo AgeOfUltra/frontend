@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css?family=Overpass");
+
+
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5rem;
+    min-height: 100vh;
+    background-color: #141519;
+    font-family: "Overpass";
+}
+.conatiner{
+    width:23rem;
+    padding:2rem;
+    background-color:hsl(213, 19%, 18%);
+    color:white;
+    border-radius: 1.5rem;
+}
+.rate{
+    position:relative;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+.rate img{
+   display:block;
+    width: 40px;
+    height:40px;
+    padding:10px;
+    border-radius: 50px;
+    background-color: hsl(216, 12%, 8%);
+}
+.rate .content{
+    width:100%;
+    display: block;
+}
+.rate .content h1{
+    font-weight: 700;
+    padding-bottom:1rem;
+}
+.rate .content p{
+    color:hsl(217, 12%, 63%);
+}
+.rate .stars{
+    display: flex;
+    justify-content:space-between;
+}
+.rate .stars .star_1,.star_2,.star_3,.star_4,.star_5{
+    width:40px;
+    height:40px;
+    background-color:hsl(216, 12%, 8%);
+    border-radius: 50px;
+    padding:0.7em;
+    text-align: center;
+    cursor: pointer;
+}
+.rate .stars .star_1:hover,.star_2:hover,.star_3:hover,.star_4:hover,.star_5:hover{
+    background-color: hsl(25, 97%, 53%);
+}
+#prevSelected{
+    background-color: hsl(217, 12%, 63%);
+}
+#isSelected{
+    background-color: hsl(25, 97%, 53%);
+}
+.rate .submit input[type="submit"]{
+    width:100%;
+    height: 50px;
+    background-color: hsl(25, 97%, 53%);
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 2.5rem;
+    font-size: 1.3rem;
+    font-weight: 300;
+    color:white;
+    text-transform: uppercase;
+
+}
+.rate .submit input[type="submit"]:hover{
+    color: hsl(25, 97%, 53%);
+    background-color: #fff;
+}
+
+.card.thankYou,
+.conatiner.thankyoucard .card{
+    display: none;
+}
+.conatiner.thankyoucard .card.thankYou{
+    display: flex;
+}
+.thankYou{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:1.5rem;
+}
+.thankYou .status{
+    width: 80%;
+    height:30px;
+    background-color:#242D36;
+    border-radius: 1.5rem;
+    text-align: center;
+    padding:5px 0;
+    color:hsl(25, 97%, 53%);
+    box-shadow: -2px -2px  5px rgba(255, 255, 255, 0.5),5px 5px 10px rgba(0, 0, 0, 0.7);
+}
+.thankYou .thanks{
+    text-align: center;
+}
+.thankYou .thanks h2{
+    margin-bottom: 1rem;
+}
+
+.stars input[type="radio"]{
+    display: none;
+}
+
+
+.attribution {color: #fff; font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
